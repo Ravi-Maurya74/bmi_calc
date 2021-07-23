@@ -279,10 +279,11 @@ class _InputPageState extends State<InputPage> {
               title: 'CALCULATE',
               onPress: () {
                 BmiBrain calc = BmiBrain(weight: weight, height: height);
+                calc.calcBmi();
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (Context) => ResultPage(
+                    builder: (context) => ResultPage(
                       bmi: calc.getBMI().toUpperCase(),
                       bmiResult: calc.getBmiResult().toUpperCase(),
                       bmiInterpretation:

@@ -20,8 +20,8 @@ class ResultPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              child: Expanded(
+            Expanded(
+              child: Container(
                 child: Text(
                   'Your Results',
                   style: TextStyle(
@@ -30,9 +30,9 @@ class ResultPage extends StatelessWidget {
                   ),
                   textAlign: TextAlign.center,
                 ),
-              ),
-              padding: EdgeInsets.only(
-                top: 20,
+                padding: EdgeInsets.only(
+                  top: 20,
+                ),
               ),
             ),
             Expanded(
